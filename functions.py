@@ -57,7 +57,6 @@ def time_count_one_arg(func, arg1):
 def time_count_two_args(func, arg1, arg2):
     start = time.perf_counter()
     func(arg1, arg2)
-    #print(func(arg1, arg2))
     end = time.perf_counter()
     return f"{(end - start):.8f}"
 
@@ -86,6 +85,4 @@ if __name__ == "__main__":
 
 
 
-#print(time_count_two_args(find_el_binary, 2, [1, 2, 3, 4, 6, 7, 8]))
-#print(time_count_one_arg(table_create, 6))
 
